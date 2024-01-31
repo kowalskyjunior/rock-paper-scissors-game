@@ -1,0 +1,279 @@
+.content-game {
+    background-image: url(../assets/bg-triangle.svg);
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    background-position: center;
+    position: relative;
+}
+
+.options-wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.paperIcon{
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    border: 20px solid hsl(230, 89%, 62%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.paper {
+    position: relative;
+    top: 60px;
+    left: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    border: 20px solid hsl(230, 89%, 62%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.scissors{
+    position: relative;
+    top: 60px;
+    right: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    border: 15px solid hsl(39, 89%, 49%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.scissorsIcon{
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    border: 15px solid hsl(39, 89%, 49%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.rock {
+    position: relative;
+    top: 270px;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    height: 150px;
+    border: 20px solid hsl(349, 71%, 52%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.rockIcon{
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: inset 2px 5px 2px #00000059, .5px 10px 10px #00000059;
+    height: 150px;
+    border: 20px solid hsl(349, 71%, 52%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.paper:hover {
+    transform: scale(0.9);
+}
+
+.scissors:hover {
+    transform: scale(0.9);
+}
+
+.rock:hover {
+    transform: scale(0.9);
+}
+
+.options-single img {
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.scissorsIcon img{
+    position: relative;
+    top: 25px;
+}
+
+.paperIcon img{
+    position: relative;
+    top: 25px;
+}
+
+.rockIcon img{
+    position: relative;
+    top: 25px;
+}
+
+.scissors img {
+    position: relative;
+    left: 20px;
+}
+
+.rock img {
+    position: relative;
+    top: 25px;
+}
+
+.content-rules {
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    bottom: 20px;
+}
+
+.content-rules button {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.content-rules button:hover {
+    background-color: #fff;
+    color: rgb(31, 55, 86);
+    font-weight: 700;
+}
+
+.overlay-result {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+    align-items: center;
+}
+
+.result-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-single{
+    text-align: center;
+    margin:2rem;
+}
+
+.user-text{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.home-text {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.result-data{
+    padding: 1rem;
+    color: #fff;
+    font-size: 40px;
+}
+
+.result-btn{
+    width: 150px;
+    height: 35px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.result-btn:hover{
+    color: rgba(255, 0, 0, 0.959);
+}
+
+@media(max-width: 768px) {
+    .overlay-result {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.822);
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 1;
+        align-items: center;
+    }
+    
+    .result-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .result-single{
+        text-align: center;
+        margin:2rem;
+    }
+    
+    .user-text{
+        margin-bottom: 1rem;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    .home-text {
+        margin-bottom: 1rem;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .result-data{
+        padding: 1rem;
+        color: #fff;
+        font-size: 40px;
+    }
+    
+    .result-btn{
+        width: 150px;
+        height: 35px;
+        background-color: #fff;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+    
+}

@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 1rem;
+    align-items: center;
+    box-shadow: .5px 10px 10px #00000059;
+}
+
+.text-header{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+.pontuation-header{
+    text-align: center;
+    padding: .5rem;
+    width: 120px;
+    border-radius: .5rem;
+    background-color: #fff;
+    box-shadow: .5px 10px 10px #00000059;
+}
+
+.score-text{
+    font-size: 15px;
+    color: hsl(229, 64%, 46%);
+}
+
+.score-number{
+    font-size: 60px;
+    color: hsl(229, 25%, 31%);
+}
+
+
